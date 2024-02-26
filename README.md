@@ -43,3 +43,6 @@ To accomplish the development tasks efficiently, a structured approach was follo
 5. **Visualization:** Visualization libraries like React Google Charts were employed for creating an interactive Sankey diagram and ensuring clear and insightful fault representation.
 
 By following this systematic approach, a frontend web application was successfully developed that met the project requirements, effectively showcasing the capabilities of the Demonstrator in predicting and managing vehicle faults.
+
+
+(Due to organization's confidentiality, the project code and screenshots cannot be uploaded to GitHub.)
