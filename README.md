@@ -1,13 +1,13 @@
-# 1st Demonstrator
+# CLAAS Demonstrator
 **Problem:**
-The task involved developing a frontend web application for the first demonstrator project, which aimed to enable users to find similar components of a vehicle's components based on uploaded 3D files. The project relied on an existing backend that computed similarities between parts using a method like Euclidean Distance.
+The task involved developing a frontend web application for the CLAAS demonstrator project, which aimed to enable users to find similar components of a vehicle's components based on uploaded 3D STL files. The project relied on an existing backend that computed similarities between parts using a method like Euclidean Distance.
 
-The challenge was to create an intuitive user interface that allowed users to upload 3D files, select a computation method, compute similar components, and visualize the results effectively. Additionally, the application needed to facilitate side-by-side comparison of selected and similar components and provide detailed analysis through histogram-based graphs.
+The challenge was to create an intuitive user interface that allowed users to upload 3D STL component, select a computation method, compute similar components, and visualize the results effectively. Additionally, the application needed to facilitate side-by-side comparison of selected and similar components and provide detailed analysis through histogram-based graphs.
 
 **Resolution:**
-To address the requirements of the project, a combination of Flask for the backend server and React.js for the frontend web application was employed. This choice allowed for seamless communication between the frontend and existing backend while providing a responsive and interactive user interface.
+To address the requirements of the project, a combination of Flask as API for the backend server and React.js for the frontend web application was employed. This choice allowed for seamless communication between the frontend and existing backend while providing a responsive and interactive user interface.
 
-The frontend application was designed to start with users uploading STL files, which were then rendered using an STL viewer component for visualization. Users could select the desired computation method and initiate the similarity computation process. This involved making requests to the Flask server, which retrieved similar components from the backend based on the uploaded 3D file and computation method.
+The frontend application was designed to start with users uploading STL files, which were then rendered using an STL viewer component for visualization. Users could select the desired computation method and initiate the similarity computation process. This involved making requests to the Flask API server, which retrieved similar components from the backend based on the uploaded 3D file and computation method.
 
 The retrieved similar components were presented to users as a list along with their similarity scores, allowing for easy comparison. Users could then view these similar parts in a separate viewer and compare them side by side with the selected component.
 
@@ -16,7 +16,7 @@ To provide a detailed analysis of the technical aspects of the components, a cha
 **Approach:**
 The development approach for the project involved the following steps:
 1. **Requirement Understanding:** Thoroughly analyzing the project requirements, including the need for 3D file uploading, computation method selection, similarity computation, result visualization, and histogram-based analysis.
-2. **Technology Selection:** Choosing Flask for the backend server to interface with the existing backend and React.js for the frontend to ensure a dynamic and responsive user interface.
+2. **Technology Selection:** Choosing Flask for the API to interface with the existing backend and React.js for the frontend to ensure a dynamic and responsive user interface.
 3. **Component Design:** Designing modular React components to handle various aspects of the application, such as file uploading, React STL Viewer for interactive file visualization, computation initiation, result presentation, side-by-side comparison, and React Graph Component for interactive histogram-based analysis.
 4. **Integration:** Integrating the frontend and backend components to enable seamless communication and data exchange, ensuring smooth operation of the application.
 5. **Testing and Optimization:** Conducting thorough testing to identify and rectify any issues or bugs, optimizing the application for performance and usability.
@@ -25,9 +25,9 @@ By following this structured approach, a frontend web application for the projec
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# 2nd Demonstrator
+# Hella Gutmann Demonstrator
 **Problem:**
-The task at hand was to develop a frontend web application for the second Demonstrator project. This application needed to depict a pilot project aimed at predicting faults in vehicle components using Artificial Intelligence (AI) and Machine Learning (ML) techniques, leveraging historical data. The primary goal was to create an intuitive interface that could display fault codes retrieved from connected vehicles, along with detailed information about the faulty components, their causes, effects, and countermeasures. Additionally, the application required the capability to predict faults in various car types, each identified by unique car IDs and names, and to present fault details categorized as critical, warning, and informational.
+The task at hand was to develop a frontend web application for this Demonstrator project. This application needed to depict a pilot project aimed at predicting faults in vehicle components using Artificial Intelligence (AI) and Machine Learning (ML) techniques, leveraging historical data. The primary goal was to create an intuitive interface that could display fault codes retrieved from connected vehicles, along with detailed information about the faulty components, their causes, effects, and countermeasures. Additionally, the application required the capability to predict faults in various car types, each identified by unique car IDs and names, and to present fault details categorized as critical, warning, and informational.
 
 **Resolution:**
 To address this challenge, the development of a React-based web application was initiated. This choice was made due to React's flexibility, component-based architecture, and robust ecosystem, which suited the project requirements well. Leveraging React's component model, reusable components were designed for displaying fault codes and their associated details in collapsible accordions, categorized by severity. Each accordion panel provided comprehensive information about the fault, including the reason behind the fault code and suggestions for rectification.
